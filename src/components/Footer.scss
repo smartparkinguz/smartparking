@@ -1,0 +1,31 @@
+.footer {
+  padding: 40px 0;
+  background-color: #000000;
+  color: white;
+
+  .row1 {
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid white;
+
+    .col-lg-8 {
+      .logo {
+        width: 100px;
+        height: 100px;
+      }
+
+      .footer-text {
+        .tex1 {
+
+        }
+
+        .text2 {
+          p{
+            padding: 0;
+          }
+          margin-left: 50px;
+        }
+      }
+    }
+
+  }
+}
