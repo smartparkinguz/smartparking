@@ -3,12 +3,13 @@ import React, {Component} from 'react';
 class SectionTwo extends Component {
     render() {
         return (
-            <div>
+            <div className="container">
                 <div className={'row  my-4 d-block'}>
-                    <div className={'bg-primary py-3 px-3 col-md-4 rounded text-white offset-4 my-4'}><h4>Biz bilan
-                        yanada tezroq!</h4></div>
+                    <div className={'bg-primary py-3 px-3 col-md-4 rounded text-center text-white offset-4 my-4'}><h4>Biz bilan
+                        yanada tezroq!</h4>
+                    </div>
                     <span className={'hompage_hint'}></span>
-                    <div><img src={'images/img_1.png'} className={'img-fluid offset-4 my-3'}/></div>
+                    <div><img src={'images/img_1.png'} className={'img-fluid offset-3 my-3'}/></div>
                     <div className={'my-3 d-flex justify-content-center'}>
                         <ul className={'list-unstyled'}>
                             <li className={'d-flex'}><h2

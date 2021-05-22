@@ -24,7 +24,6 @@ class App extends Component {
                         <Section/>
                         <SectionTwo/>
                     </Route>
-
                     <Route path="/map">
                         <Map/>
                     </Route>

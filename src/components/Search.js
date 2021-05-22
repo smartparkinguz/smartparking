@@ -8,7 +8,8 @@ const people = [
     "Toshkent Abu-saxiy (Ippodrom)",
     "Toshkent Hilton Tashkent City",
     "Toshkent Amir Temur park",
-    "Toshkent Anhor Lokamativ parki"
+    "Toshkent Anhor Lokamativ parki",
+    "Toshkent Chorsu"
 ];
 
 export default function Search() {

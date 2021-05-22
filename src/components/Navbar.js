@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Registration from "./Registration";
 import {Modal, ModalBody, ModalHeader} from "reactstrap";
 import {AvField, AvForm} from "availity-reactstrap-validation";
+import {Link} from "react-router-dom";
 
 class Navbar extends Component {
     state = {
@@ -52,8 +53,8 @@ class Navbar extends Component {
                 <nav className="navbar navbar-expand-lg d-block">
                     <div className="container-fluid d-flex">
                         <div className="nav-left">
-                            <a className="navbar-brand" href="index.html">
-                                <img className="logo" src="/images/TV-sony.jpg" alt="logo"/></a>
+                            <Link className="navbar-brand" to="/">
+                                <img className="logo" src="/images/TV-sony.jpg" alt="logo"/></Link>
                         </div>
 
                         <div className="nav-right">

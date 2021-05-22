@@ -24,6 +24,9 @@
   background: black;
   width: 40px;
   height: 50px;
+  position: absolute;
+  left: 10px;
+  top: -5px;
 }
 
 body {
@@ -93,6 +96,7 @@ body .search .list-item a {
 body .map-section .col-right {
   padding-top: 15px;
   overflow-y: scroll;
+  height: 657px;
 }
 body .map-section .col-right .card {
   margin: 15px 0;
@@ -115,6 +119,9 @@ body .map-section .col-right .card .card-body .col-lg-12 .n-text {
   color: white !important;
   font-size: 25px;
   font-weight: 600;
+}
+body .map-section .col-right .card .card-body .box-ring h3 {
+  position: relative;
 }
 body .map-section .col-right .card .card-body .col-lg-6 .m-text {
   font-size: 20px;

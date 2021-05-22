@@ -29,6 +29,9 @@ $mainThirdColor: #c0c0c0;
     background: black;
     width: 40px;
     height: 50px;
+    position: absolute;
+    left: 10px;
+    top: -5px;
   }
 }
 
@@ -115,6 +118,7 @@ body {
     .col-right {
       padding-top: 15px;
       overflow-y: scroll;
+      height: 657px;
 
       .card {
         margin: 15px 0;
@@ -129,7 +133,8 @@ body {
         }
 
         .card-body {
-          padding:15px;
+          padding: 15px;
+
           .col-lg-12 {
             .n-text {
               margin-left: 3px;
@@ -138,6 +143,12 @@ body {
               color: white !important;
               font-size: 25px;
               font-weight: 600;
+            }
+          }
+
+          .box-ring {
+            h3 {
+              position: relative;
             }
           }
 
@@ -154,9 +165,6 @@ body {
 
         }
 
-        .card-footer {
-
-        }
       }
     }
   }
