@@ -1,13 +1,14 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const people = [
-    "Siri",
-    "Alexa",
-    "Google",
-    "Facebook",
-    "Twitter",
-    "Linkedin",
-    "Sinkedin"
+    "Toshkent Xalqlar do'stligi",
+    "Toshkent Qo'yliq dehqon bozori",
+    "Toshkent Malika bozori",
+    "Toshkent Abu-saxiy (Ippodrom)",
+    "Toshkent Hilton Tashkent City",
+    "Toshkent Amir Temur park",
+    "Toshkent Anhor Lokamativ parki"
 ];
 
 export default function Search() {
@@ -33,7 +34,8 @@ export default function Search() {
             />
             <ul className="list">
                 {searchResults.map(item => (
-                    <li className="list-item">{item}</li>
+                    searchTerm.length===0?"":
+                   <li className="list-item"><Link to="/map"><span className="icon location"></span>{item}</Link></li>
                 ))}
             </ul>
         </div>

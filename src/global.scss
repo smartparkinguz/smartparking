@@ -1,9 +1,39 @@
+$mainFirstColor: #FFFF;
+$mainSecondColor: #2b2b2c;
+$mainThirdColor: #c0c0c0;
+
+.icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  -webkit-mask-position: center;
+  vertical-align: center;
+
+  &.location {
+    mask-image: url("assets/icons/parking-location.svg");
+    -webkit-mask-image: url("assets/icons/parking-location.svg");
+    background: white;
+    width: 24px;
+    height: 25px;
+    margin-right: 10px;
+  }
+
+  &.people {
+    mask-image: url("assets/icons/run.svg");
+    -webkit-mask-image: url("assets/icons/run.svg");
+    background: black;
+    width: 40px;
+    height: 50px;
+  }
+}
+
 body {
   background-size: cover;
-  $mainFirstColor: #FFFF;
-  $mainSecondColor: #0000ff;
-  $mainThirdColor: #c0c0c0;
-
 
   .navbar {
     background-color: rgba(0, 0, 0, 0.8);
@@ -35,7 +65,7 @@ body {
         width: 100%;
         position: absolute;
         height: 100%;
-        background: rgba(0, 0, 0, 0.1);
+        background: rgba(0, 0, 0, 0.5);
       }
 
       .fon2 {
@@ -45,18 +75,6 @@ body {
         background: transparent;
         display: flex;
         justify-content: center;
-
-        .form {
-          position: absolute;
-          z-index: 5;
-          top: 50px;
-          text-align: center;
-
-          .input1 {
-            outline: none;
-            padding: 30px 50px;
-          }
-        }
       }
 
       width: 100%;
@@ -64,15 +82,82 @@ body {
   }
 
   .search {
-    margin-top: 120px;
+    margin-top: 80px;
     border: none;
+
     .input-search {
-      height: 40px;
+      border-radius: 4px;
+      padding: 5px;
+      height: 50px;
+      width: 380px;
       border: none;
+      font-size: 20px;
+      text-align: center;
+      outline: none;
+      margin-bottom: 10px;
     }
 
     .list-item {
       list-style-type: none;
+      padding: 5px 0 0 2px !important;
+      text-align: left;
+      margin: 0;
+
+      a {
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .map-section {
+    .col-right {
+      padding-top: 15px;
+      overflow-y: scroll;
+
+      .card {
+        margin: 15px 0;
+        text-align: center;
+        background: transparent;
+        border-radius: 12px;
+        overflow: hidden;
+
+        .card-header {
+          background: #007BFFFF;
+          padding: 5px;
+        }
+
+        .card-body {
+          padding:15px;
+          .col-lg-12 {
+            .n-text {
+              margin-left: 3px;
+              padding: 4px 15px;
+              border-radius: 4px;
+              color: white !important;
+              font-size: 25px;
+              font-weight: 600;
+            }
+          }
+
+          .col-lg-6 {
+            .m-text {
+              font-size: 20px;
+            }
+
+            .minut {
+              font-size: 20px;
+            }
+
+          }
+
+        }
+
+        .card-footer {
+
+        }
+      }
     }
   }
 
